@@ -14,16 +14,22 @@ Visit [http://localhost:3000](http://localhost:3000) to view the application.
 
 ## 📦 Deployment to Vercel
 
-### Option 1: Deploy via Vercel Dashboard
-1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
-2. Click "Add New Project"
-3. Import this repository: `https://github.com/dylancobb2525/factor_xi.git`
-4. Vercel will automatically detect the configuration from `vercel.json`
-5. Click "Deploy"
+### Important: Configure Root Directory
 
-### Option 2: Deploy via Vercel CLI
+Since the Next.js app is in the `AlzDiseaseLC` subdirectory, you need to configure Vercel properly:
+
+1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
+2. Click "Add New Project" or "Import Project"
+3. Import this repository: `https://github.com/dylancobb2525/factor_xi.git`
+4. **IMPORTANT**: Before deploying, click on "Edit" next to "Root Directory"
+5. Set **Root Directory** to: `AlzDiseaseLC`
+6. Vercel will automatically detect Next.js framework
+7. Click "Deploy"
+
+### Alternative: Deploy via Vercel CLI
 ```bash
 npm install -g vercel
+cd AlzDiseaseLC
 vercel --prod
 ```
 
