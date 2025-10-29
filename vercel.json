@@ -1,9 +1,0 @@
-{
-  "buildCommand": "cd AlzDiseaseLC && npm run build",
-  "devCommand": "cd AlzDiseaseLC && npm run dev",
-  "installCommand": "cd AlzDiseaseLC && npm install",
-  "outputDirectory": "AlzDiseaseLC/.next",
-  "framework": "nextjs",
-  "regions": ["iad1"]
-}
-
