@@ -41,15 +41,7 @@ function FacultyCard({ faculty, index }: FacultyCardProps) {
                   alt={faculty.name}
                   width={74}
                   height={74}
-                  className={`object-cover object-top w-full h-full ${
-                    faculty.name === 'Julia Brandts' ||
-                    faculty.name === 'Pasquale Perrone-Filardi' ||
-                    faculty.name === 'Ira J. Goldberg' ||
-                    faculty.name === 'Christie Ballantyne' ||
-                    faculty.name === 'Pam R. Taub'
-                      ? 'scale-125'
-                      : ''
-                  }`}
+                  className="object-cover object-top w-full h-full"
                   quality={100}
                   priority={index < 6}
                 />
@@ -115,124 +107,64 @@ export function Faculty() {
   // Faculty data - Factor XI Learning Center Expert Faculty/Steering Committee
   const facultyMembers: Faculty[] = [
     {
-      name: 'Robert A. Harrington',
-      title: 'Stanford University',
-      credentials: 'MD',
-      institution: 'Stanford University'
+      name: 'Valeria Caso',
+      credentials: 'MD, PhD, FESO',
+      imageUrl: '/headshots/val.png'
     },
     {
       name: 'C. Michael Gibson',
-      title: 'Harvard Medical School, Baim Institute',
       credentials: 'MD',
-      institution: 'Harvard Medical School'
+      imageUrl: '/headshots/gib.png'
     },
     {
-      name: 'Philippe Gabriel Steg',
-      title: 'Université Paris-Cité',
+      name: 'Robert A. Harrington',
       credentials: 'MD',
-      institution: 'Université Paris-Cité, France'
-    },
-    {
-      name: 'Jeffrey I. Weitz',
-      title: 'McMaster University',
-      credentials: 'MD',
-      institution: 'McMaster University, Canada'
-    },
-    {
-      name: 'Roxana Mehran',
-      title: 'Mount Sinai',
-      credentials: 'MD',
-      institution: 'Mount Sinai, New York'
-    },
-    {
-      name: 'Kenneth W. Mahaffey',
-      title: 'Stanford University',
-      credentials: 'MD',
-      institution: 'Stanford University'
-    },
-    {
-      name: 'Graeme J. Hankey',
-      title: 'University of Western Australia',
-      credentials: 'MD',
-      institution: 'University of Western Australia'
-    },
-    {
-      name: 'Shamir R. Mehta',
-      title: 'McMaster University',
-      credentials: 'MD',
-      institution: 'McMaster University, Canada'
-    },
-    {
-      name: 'Carolyn S. P. Lam',
-      title: 'National Heart Centre Singapore',
-      credentials: 'MBBS, PhD',
-      institution: 'National Heart Centre Singapore'
-    },
-    {
-      name: 'M. Cecilia Bahit',
-      title: 'INECO Neurociencias',
-      credentials: 'MD',
-      institution: 'INECO Neurociencias'
+      imageUrl: '/headshots/rob.png'
     },
     {
       name: 'S. Claiborne Johnston',
-      title: 'University of California, San Francisco',
-      credentials: 'MD, PhD',
-      institution: 'UCSF'
+      credentials: 'PhD, MD, MPH',
+      imageUrl: '/headshots/clay.png'
     },
     {
-      name: 'Sneha S. Jain',
-      title: 'Stanford University',
-      credentials: 'MD, MBA',
-      institution: 'Stanford University'
+      name: 'Carolyn S. P. Lam',
+      credentials: 'MBBS, PhD, FRCP, MS, FACC, FAMS, FESC',
+      imageUrl: '/headshots/car.png'
     },
     {
-      name: 'Karen S. Pieper',
-      title: 'Thrombosis Research Institute',
-      credentials: 'MS',
-      institution: 'London, United Kingdom'
+      name: 'Roxana Mehran',
+      credentials: 'MD',
+      imageUrl: '/headshots/rox.png'
     },
     {
-      name: 'Wataru Shimizu',
-      title: 'Nippon Medical School',
-      credentials: 'MD, PhD',
-      institution: 'Tokyo, Japan'
+      name: 'Manesh R. Patel',
+      credentials: 'MD',
+      imageUrl: '/headshots/man.png'
     },
     {
       name: 'Tatjana Potpara',
-      title: 'University of Belgrade',
-      credentials: 'MD, PhD',
-      institution: 'Serbia'
+      credentials: 'MD PhD',
+      imageUrl: '/headshots/tat.png'
     },
     {
       name: 'Christian T. Ruff',
-      title: 'Brigham and Women\'s Hospital',
       credentials: 'MD, MPH',
-      institution: 'Harvard Medical School'
+      imageUrl: '/headshots/ruff.png'
     },
     {
-      name: 'Hooman Kamel',
-      title: 'Weill Cornell Medicine',
-      credentials: 'MD, MS',
-      institution: 'New York, NY'
+      name: 'Mukul Sharma',
+      credentials: 'MD MSc FRCPC',
+      imageUrl: '/headshots/muk.png'
     },
     {
-      name: 'Basil S. Lewis',
-      title: 'Lady Davis Carmel Medical Center',
+      name: 'Ashkan Shoamanesh',
       credentials: 'MD',
-      institution: 'Haifa, Israel'
+      imageUrl: '/headshots/ash.png'
     },
     {
-      name: 'Jan H. Cornel',
-      title: 'Noordwest Ziekenhuisgroep',
+      name: 'Jeffrey I. Weitz',
       credentials: 'MD',
-      institution: 'Alkmaar, The Netherlands'
-    },
-    {
-      name: 'Peter R. Kowey',
-      title: 'Lankenau Institute for Medical Research',
-      credentials: 'MD',
-      institution: 'Philadelphia, PA'
+      imageUrl: '/headshots/jeff.png'
     }
   ]
 
@@ -245,7 +177,7 @@ export function Faculty() {
           transition={{ duration: 0.5 }} 
           className="text-center mb-8"
         >
-          <h2 className="heading-font text-4xl lg:text-5xl font-bold text-slate-900">
+          <h2 className="heading-font text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             Expert Faculty & <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">Steering Committee</span>
           </h2>
           <p className="text-base lg:text-lg text-slate-700 max-w-6xl mx-auto leading-relaxed text-center">
@@ -253,9 +185,9 @@ export function Faculty() {
           </p>
         </motion.div>
 
-        {/* Faculty Grid - Wider layout for less vertical space */}
+        {/* Faculty Grid */}
         <div className="flex justify-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-5">
             {facultyMembers.map((faculty, index) => (
               <FacultyCard key={`faculty-${index}`} faculty={faculty} index={index} />
             ))}

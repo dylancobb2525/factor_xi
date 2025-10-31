@@ -127,7 +127,7 @@ export function VideoIntroduction() {
               </span>
             </h2>
             <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
-              Join our community of cardiology, neurology, stroke specialists, and multidisciplinary healthcare professionals by exploring curated educational resources focused on the latest clinical trial data and best practices for Factor XI/XIa pathway inhibition in acute coronary syndromes, atrial fibrillation, and secondary stroke prevention.
+              Through expert interviews, interactive case discussions, multidisciplinary panels, and patient perspectives, leading authorities in thrombosis, cardiology, neurology, and hematology explore the rapidly evolving landscape of Factor XIa inhibition. Gain access to the latest scientific insights and clinical trial evidence shaping a new era of anticoagulation—one aimed at maintaining protection against thrombotic events while minimizing bleeding risk. Empower clinicians with practical strategies to individualize antithrombotic care, optimize safety and efficacy in high-risk populations, and translate emerging evidence into confident, real-world application.
             </p>
           </motion.div>
         </div>

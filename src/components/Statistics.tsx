@@ -207,37 +207,25 @@ export function Statistics() {
     {
       icon: <Heart size={24} className="text-rose-700" />,
       value: "1.2M",
-      description: "People in the U.S. are hospitalized with Acute Coronary Syndromes yearly, with recurrence rates of 4.4-6.7%",
+      description: "People in the U.S. are hospitalized with acute coronary syndromes yearly, with recurrence rates of 4.4-6.7%",
       color: "bg-gradient-to-br from-rose-50 to-pink-50"
-    },
-    {
-      icon: <Activity size={24} className="text-purple-700" />,
-      value: "795,000",
-      description: "Stroke events occur yearly in America (610,000 first-ever strokes). Stroke is the 5th leading cause of death in America",
-      color: "bg-gradient-to-br from-purple-50 to-indigo-50"
-    },
-    {
-      icon: <TrendingUp size={24} className="text-amber-700" />,
-      value: "6-15x",
-      description: "Risk of recurrent stroke in someone who has already had one is 6-15 times higher than the risk in the general population",
-      color: "bg-gradient-to-br from-amber-50 to-yellow-50"
     },
     {
       icon: <Users size={24} className="text-blue-700" />,
       value: "1 in 22",
-      description: "Americans are estimated to be affected by Atrial Fibrillation",
+      description: "Americans are estimated to be affected by atrial fibrillation, with untreated patients 5x more likely to have a stroke than those without",
       color: "bg-gradient-to-br from-blue-50 to-cyan-50"
     },
     {
-      icon: <ShieldAlert size={24} className="text-teal-700" />,
-      value: "5x",
-      description: "People with untreated AFib are 5 times more likely to have a stroke than people without AFib",
-      color: "bg-gradient-to-br from-teal-50 to-emerald-50"
+      icon: <Activity size={24} className="text-purple-700" />,
+      value: "5th leading cause of death",
+      description: "795,000 stroke events occur yearly in America, with the risk of recurrent stroke in someone who has already had one is 6-15x higher than the risk in the general population",
+      color: "bg-gradient-to-br from-purple-50 to-indigo-50"
     },
     {
       icon: <Droplet size={24} className="text-red-600" />,
-      value: "0.07-0.5%",
-      description: "Among DOAC users, the annual ICH (intracranial hemorrhage) risk is 0.07-0.5%, which becomes impactful at scale in aging populations",
+      value: "Increased ICH Risk",
+      description: "Amongst DOAC users' risk of ICH is 0.07-0.5%, which becomes impactful at scale in aging populations",
       color: "bg-gradient-to-br from-red-50 to-rose-50"
     }
   ]
@@ -264,11 +252,11 @@ export function Statistics() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-12 gap-5 mb-8 auto-rows-fr">
           {statistics.map((stat, index) => (
             <div key={index} className={
-              index < 4 
-                ? "xl:col-span-3" 
-                : index === 4 
-                  ? "xl:col-span-4 xl:col-start-1" 
-                  : "xl:col-span-4"
+              index < 3 
+                ? "xl:col-span-4" 
+                : index === 3
+                  ? "xl:col-span-6 xl:col-start-1" 
+                  : "xl:col-span-6"
             }>
               <StatisticCard icon={stat.icon} value={stat.value} description={stat.description} index={index} color={stat.color} />
             </div>
