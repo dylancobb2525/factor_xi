@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 interface Faculty {
   name: string
-  title: string
+  title?: string
   credentials: string
   institution?: string
   imageUrl?: string
