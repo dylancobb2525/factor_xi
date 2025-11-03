@@ -20,7 +20,7 @@ export function Hero() {
     window.scrollTo({ top: y, behavior: 'smooth' })
   }
   return (
-    <section className="relative min-h-[50vh] lg:h-[55vh] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
+    <section className="relative min-h-[40vh] lg:h-[45vh] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
     >
       {/* Sophisticated Background Patterns */}
       <div className="absolute inset-0">
@@ -159,38 +159,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-center"
           >
-            <h1 className="heading-font text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight text-shadow-md">
+            <h1 className="heading-font text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-shadow-md">
               Factor XI Learning Center
               <br />
               <span className="bg-gradient-to-r from-blue-300 to-teal-300 bg-clip-text text-transparent">
                 The Evolving Role of Anticoagulation in Acute Coronary Syndromes, Atrial Fibrillation, Secondary Stroke Prevention
               </span>
             </h1>
-          </motion.div>
-
-          {/* Description - Full Width */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="space-y-6 text-center"
-          >
-            <motion.p 
-              className="text-xs sm:text-sm lg:text-base text-blue-100 leading-relaxed font-sans max-w-5xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-            >
-              Establish a central resource to describe the benefits of the Factor XI/XIa Pathway Inhibition, while engaging multidisciplinary teams to identify appropriate acute coronary syndrome, secondary stroke prevention, and atrial fibrillation patients at risk for thrombotic events.
-            </motion.p>
-            <motion.p 
-              className="text-xs sm:text-sm lg:text-base text-blue-100 leading-relaxed font-sans max-w-5xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
-            >
-              Differentiate the latest efficacy and safety of recent clinical trial data for healthcare professionals to better understand how they can improve treatment plans within community by utilizing newer pharmacologic interventions and best practices for implementation into clinical practice.
-            </motion.p>
           </motion.div>
 
           {/* CTA Buttons - Centered */}
@@ -202,7 +177,7 @@ export function Hero() {
           >
             <motion.button 
               onClick={() => scrollToWithOffset('activities')}
-              className="relative overflow-hidden bg-gradient-to-r from-blue-500 to-teal-500 text-white px-6 py-3 rounded-xl font-semibold shadow-xl group text-sm"
+              className="relative overflow-hidden bg-gradient-to-r from-blue-500 to-teal-500 text-white px-8 py-4 rounded-xl font-semibold shadow-xl group text-base lg:text-lg"
               whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 0, 0, 0.3)" }}
               whileTap={{ scale: 0.95 }}
             >
@@ -216,7 +191,7 @@ export function Hero() {
             </motion.button>
             <motion.button 
               onClick={() => scrollToWithOffset('resource-center')}
-              className="relative px-6 py-3 rounded-xl font-semibold border-2 border-white/60 text-white/90 backdrop-blur-sm overflow-hidden group text-sm"
+              className="relative px-8 py-4 rounded-xl font-semibold border-2 border-white/60 text-white/90 backdrop-blur-sm overflow-hidden group text-base lg:text-lg"
               whileHover={{ 
                 scale: 1.05, 
                 borderColor: "rgba(255, 255, 255, 0.9)",
