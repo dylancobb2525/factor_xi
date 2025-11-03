@@ -157,9 +157,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-center"
+            className="text-center max-w-6xl mx-auto px-4"
           >
-            <h1 className="heading-font text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight text-shadow-md">
+            <h1 className="heading-font text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-white leading-tight text-shadow-md">
               Factor XI Learning Center
               <br />
               <span className="bg-gradient-to-r from-blue-300 to-teal-300 bg-clip-text text-transparent">
