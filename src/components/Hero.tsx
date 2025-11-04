@@ -20,7 +20,7 @@ export function Hero() {
     window.scrollTo({ top: y, behavior: 'smooth' })
   }
   return (
-    <section className="relative min-h-[40vh] lg:h-[45vh] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
+    <section className="relative min-h-[45vh] lg:min-h-[50vh] overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
     >
       {/* Sophisticated Background Patterns */}
       <div className="absolute inset-0">
@@ -149,15 +149,15 @@ export function Hero() {
 
 
       {/* Main Content */}
-      <div className="relative z-10 flex items-center h-full px-6 lg:px-16 py-8 lg:py-0">
-        <div className="max-w-[1600px] mx-auto w-full space-y-4">
+      <div className="relative z-10 flex items-center justify-center min-h-[45vh] lg:min-h-[50vh] px-6 lg:px-16 py-4 lg:py-16">
+        <div className="max-w-[1600px] mx-auto w-full space-y-6 lg:space-y-5">
           
           {/* Main Title - Full Width */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-center max-w-6xl mx-auto px-4"
+            className="text-center max-w-6xl mx-auto px-4 sm:px-6"
           >
             <h1 className="heading-font text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-white leading-tight text-shadow-md">
               Factor XI Learning Center
