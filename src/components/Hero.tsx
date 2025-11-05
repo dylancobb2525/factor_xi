@@ -160,7 +160,7 @@ export function Hero() {
             className="text-center max-w-6xl mx-auto px-4 sm:px-6"
           >
             <h1 className="heading-font text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-5xl font-bold text-white leading-tight text-shadow-md">
-              Factor XI Learning Center
+              Factor XIa Learning Center
               <br />
               <span className="bg-gradient-to-r from-blue-300 to-teal-300 bg-clip-text text-transparent">
                 The Evolving Role of Anticoagulation in Acute Coronary Syndromes, Atrial Fibrillation, Secondary Stroke Prevention

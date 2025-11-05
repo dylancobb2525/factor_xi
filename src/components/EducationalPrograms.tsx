@@ -109,7 +109,7 @@ export function EducationalPrograms() {
             <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">Activities</span>
           </h2>
           <p className="text-base lg:text-lg text-slate-700 max-w-6xl mx-auto leading-relaxed text-center">
-            CME programs exploring Factor XI/XIa pathway inhibition in acute coronary syndromes, secondary stroke prevention, and atrial fibrillation.
+            CME programs exploring Factor XIa pathway inhibition in acute coronary syndromes, secondary stroke prevention, and atrial fibrillation.
           </p>
         </motion.div>
 

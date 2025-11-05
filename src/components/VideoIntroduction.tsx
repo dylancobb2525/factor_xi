@@ -123,7 +123,7 @@ export function VideoIntroduction() {
             <h2 className="heading-font text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
               Your Clinician-Focused Hub for{' '}
               <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
-                Factor XI/XIa Pathway Inhibition
+                Factor XIa Pathway Inhibition
               </span>
             </h2>
             <p className="text-base lg:text-lg text-slate-700 leading-relaxed">
